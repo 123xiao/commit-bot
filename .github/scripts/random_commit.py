@@ -23,10 +23,10 @@ if min_sleep < 1: min_sleep = 1
 if max_sleep < min_sleep: max_sleep = min_sleep + 10
 
 # 初始随机延迟，模拟人类行为
-start_delay = random.randint(0, max_start_delay_min * 60)
-if start_delay > 0:
-    print(f"Initial randomized delay: {start_delay} seconds (~{start_delay//60} minutes)")
-    time.sleep(start_delay)
+# start_delay = random.randint(0, max_start_delay_min * 60)
+# if start_delay > 0:
+#     print(f"Initial randomized delay: {start_delay} seconds (~{start_delay//60} minutes)")
+#     time.sleep(start_delay)
 
 # 模拟休息日机制：根据概率决定是否跳过本次运行
 if random.random() < skip_prob:
